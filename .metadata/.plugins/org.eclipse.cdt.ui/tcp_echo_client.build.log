@@ -1,0 +1,6 @@
+13:36:49 **** Incremental Build of configuration Debug for project tcp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+13:36:50 Build Finished. 0 errors, 0 warnings. (took 112ms)
+

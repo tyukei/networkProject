@@ -1,0 +1,326 @@
+13:33:06 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+Building file: ../src/tcp_echo_fork.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_fork.d" -MT"src/tcp_echo_fork.o" -o "src/tcp_echo_fork.o" "../src/tcp_echo_fork.c"
+Finished building: ../src/tcp_echo_fork.c
+ 
+Building target: tcp_echo_fork
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_fork"  ./src/tcp_echo_fork.o   -lmynet
+Finished building target: tcp_echo_fork
+ 
+13:34:55 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project http_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project tcp_curses ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project tcp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project tcp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:02 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:03 **** Incremental Build of configuration Debug for project tcp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:03 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:04 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:06 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:06 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:07 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:07 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:34 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:45 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:49 **** Incremental Build of configuration Debug for project http_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:49 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:49 **** Incremental Build of configuration Debug for project tcp_curses ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:49 **** Incremental Build of configuration Debug for project tcp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:50 **** Incremental Build of configuration Debug for project tcp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:50 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:50 **** Incremental Build of configuration Debug for project tcp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:50 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:52 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:53 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:53 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:54 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:55 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:57 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:58 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:36:58 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:37:14 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:37:16 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:37:32 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:40:31 **** Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+Building file: ../src/tcp_echo_client3opt.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_client3opt.d" -MT"src/tcp_echo_client3opt.o" -o "src/tcp_echo_client3opt.o" "../src/tcp_echo_client3opt.c"
+Finished building: ../src/tcp_echo_client3opt.c
+ 
+Building target: tcp_echo_client3opt
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet" -o "tcp_echo_client3opt"  ./src/tcp_echo_client3opt.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [tcp_echo_client3opt] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:40:32 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:40:32 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+Building target: tcp_echo_client3opt
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet" -o "tcp_echo_client3opt"  ./src/tcp_echo_client3opt.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [tcp_echo_client3opt] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:40:32 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:40:34 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+Building target: tcp_echo_client3opt
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet" -o "tcp_echo_client3opt"  ./src/tcp_echo_client3opt.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [tcp_echo_client3opt] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:40:34 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:40:54 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:40:54 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+Building file: ../src/tcp_echo_client3opt.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_client3opt.d" -MT"src/tcp_echo_client3opt.o" -o "src/tcp_echo_client3opt.o" "../src/tcp_echo_client3opt.c"
+Finished building: ../src/tcp_echo_client3opt.c
+ 
+Building target: tcp_echo_client3opt
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_client3opt"  ./src/tcp_echo_client3opt.o   -lmynet
+Finished building target: tcp_echo_client3opt
+ 
+13:40:54 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:42:27 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:43:36 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:44:01 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:45:41 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:46:43 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:46:44 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:46:44 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:46:45 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:46:46 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:47:12 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:47:15 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:51:43 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:51:43 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:51:43 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:51:43 **** Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+Building file: ../src/tcp_echo_server3th.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_server3th.d" -MT"src/tcp_echo_server3th.o" -o "src/tcp_echo_server3th.o" "../src/tcp_echo_server3th.c"
+../src/tcp_echo_server3th.c: 関数 ‘main’ 内:
+../src/tcp_echo_server3th.c:32:41: エラー: expected expression before ‘)’ token
+     if( (tharg =                        )==NULL ){
+                                         ^
+../src/tcp_echo_server3th.c:39:51: エラー: expected expression before ‘!=’ token
+     if(                                           != 0 ){
+                                                   ^
+../src/tcp_echo_server3th.c:13:13: 警告: 使用されない変数 ‘tid’ です [-Wunused-variable]
+   pthread_t tid;
+             ^
+../src/tcp_echo_server3th.c: 関数 ‘echo_thread’ 内:
+../src/tcp_echo_server3th.c:67:36: エラー: expected expression before ‘==’ token
+     if(                            == -1 ){
+                                    ^
+make: *** [src/tcp_echo_server3th.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:57:54 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:57:54 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:57:54 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:57:54 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+Building file: ../src/tcp_echo_server3th.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_server3th.d" -MT"src/tcp_echo_server3th.o" -o "src/tcp_echo_server3th.o" "../src/tcp_echo_server3th.c"
+../src/tcp_echo_server3th.c: 関数 ‘echo_thread’ 内:
+../src/tcp_echo_server3th.c:67:36: 警告: ‘==’ の被演算子内にある比較の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(send(sock, buf, strsize, 0) == -1 == -1 ){
+                                    ^
+Finished building: ../src/tcp_echo_server3th.c
+ 
+Building target: tcp_echo_server3th
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_server3th"  ./src/tcp_echo_server3th.o   -lmynet
+./src/tcp_echo_server3th.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/network/tcp_echo_server3th/Debug/../src/tcp_echo_server3th.c:39: `pthread_create' に対する定義されていない参照です
+./src/tcp_echo_server3th.o: 関数 `echo_thread' 内:
+/home/centos/デスクトップ/git/network/tcp_echo_server3th/Debug/../src/tcp_echo_server3th.c:58: `pthread_detach' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [tcp_echo_server3th] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:59:08 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:59:08 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:59:09 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+Building file: ../src/tcp_echo_server2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_server2.d" -MT"src/tcp_echo_server2.o" -o "src/tcp_echo_server2.o" "../src/tcp_echo_server2.c"
+Finished building: ../src/tcp_echo_server2.c
+ 
+Building target: tcp_echo_server2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_server2"  ./src/tcp_echo_server2.o   -lmynet
+Finished building target: tcp_echo_server2
+ 
+13:59:09 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+Building file: ../src/tcp_echo_server3th.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_server3th.d" -MT"src/tcp_echo_server3th.o" -o "src/tcp_echo_server3th.o" "../src/tcp_echo_server3th.c"
+Finished building: ../src/tcp_echo_server3th.c
+ 
+Building target: tcp_echo_server3th
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_server3th"  ./src/tcp_echo_server3th.o   -lmynet
+./src/tcp_echo_server3th.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/network/tcp_echo_server3th/Debug/../src/tcp_echo_server3th.c:39: `pthread_create' に対する定義されていない参照です
+./src/tcp_echo_server3th.o: 関数 `echo_thread' 内:
+/home/centos/デスクトップ/git/network/tcp_echo_server3th/Debug/../src/tcp_echo_server3th.c:58: `pthread_detach' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [tcp_echo_server3th] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:02:17 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:02:17 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:02:17 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:02:17 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+Building target: tcp_echo_server3th
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_server3th"  ./src/tcp_echo_server3th.o   -lmynet -lpthread
+Finished building target: tcp_echo_server3th
+ 
+14:02:48 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:03:06 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.

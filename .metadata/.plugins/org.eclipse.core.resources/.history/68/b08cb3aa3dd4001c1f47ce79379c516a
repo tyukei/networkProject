@@ -1,0 +1,65 @@
+#include "mynet.h"
+
+#define PORT 50000         /* ポート番号 ←適当に書き換える */
+#define BUFSIZE 50   /* バッファサイズ */
+
+int main()
+{
+  int sock_listen, sock_accepted;
+  FILE * fp;
+  char buf[BUFSIZE];
+  char com_buf[BUFSIZE];
+  char *p;
+  int strsize;
+
+  //クライアントからの接続を準備する
+  sock_listen = init_tcpserver(PORT, 5);
+  sock_accepted = accept(sock_listen, NULL, NULL);
+  close(sock_listen);
+
+
+  do{
+	  // ">"を送信する
+      if((send(sock_accepted, "\n>", strlen("\n>"), 0)) == -1){
+          exit_errmesg("send()");
+      }
+      /* 文字列をクライアントから受信する */
+      if((strsize=recv(sock_accepted, buf, BUFSIZE, 0)) == -1){
+          exit_errmesg("recv()");
+      }
+
+
+      if(strncmp(buf, "list", 4) == 0){
+          fp = popen("ls ~/work", "r");
+          //while(!feof(fp)){
+          while(fgets(buf, BUFSIZE, fp) != NULL) {
+
+              //fgets(buf, BUFSIZE, fp);
+              printf("%s", buf);
+              send(sock_accepted, buf, strlen(buf),0);
+          }
+          strcpy(buf, "\0");
+      }else if(strncmp(buf, "type", 4) == 0){
+          strcpy(com_buf, "cat ~/work/");
+          strcat(com_buf, &buf[5]);
+          p = strstr(com_buf, "\r");
+          *p = '\0';
+          printf("test:%s\n", com_buf);
+          if((fp = popen(com_buf, "r")) != NULL){
+              while(!feof(fp)){
+                  fgets(buf, BUFSIZE, fp);
+                  send(sock_accepted, buf, strlen(buf),0);
+              };
+              strcpy(buf, "\0");
+          }else{
+              send(sock_accepted, "no such dir.\n", strlen("no such dir.\n"),0);
+          }
+      }else if(strncmp(buf, "exit", 4) != 0){
+          send(sock_accepted, "no such command.\n", strlen("no such command.\n"),0);
+      }
+  }while(strncmp(buf, "exit", 4) != 0); /* "exit"を受信するまで繰り返す */
+
+  close(sock_accepted);
+
+  exit(EXIT_SUCCESS);
+}

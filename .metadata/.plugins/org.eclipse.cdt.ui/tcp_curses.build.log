@@ -1,0 +1,6 @@
+13:36:49 **** Incremental Build of configuration Debug for project tcp_curses ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+13:36:49 Build Finished. 0 errors, 0 warnings. (took 99ms)
+
