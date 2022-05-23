@@ -1,0 +1,6 @@
+13:23:50 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+13:23:50 Build Finished. 0 errors, 0 warnings. (took 81ms)
+

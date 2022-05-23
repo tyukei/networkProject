@@ -324,3 +324,330 @@ make: `all' に対して行うべき事はありません.
 14:03:06 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
 make all 
 make: `all' に対して行うべき事はありません.
+13:12:23 **** Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:12:23 **** Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet/Debug" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+In file included from ../src/quiz.c:1:0:
+../src/quiz.h:6:19: 致命的エラー: mynet.h: そのようなファイルやディレクトリはありません
+ #include "mynet.h"
+                   ^
+コンパイルを停止しました。
+make: *** [src/quiz.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:12:24 **** Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:12:24 **** Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:12:24 **** Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:12:24 **** Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:13:31 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:13:31 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+../src/quiz.c: 関数 ‘main’ 内:
+../src/quiz.c:17:7: 警告: 変数 ‘num_client’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   int num_client =DEFAULT_NCLIENT;
+       ^
+Finished building: ../src/quiz.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o   -lmynet
+./src/quiz.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz.c:65: `quiz_client' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:13:31 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:13:31 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:13:32 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:13:32 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:20 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:20 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:17:21 **** Incremental Build of configuration Debug for project tcp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:21 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:21 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:21 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:21 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:54 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:55 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:17:55 **** Incremental Build of configuration Debug for project tcp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:55 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:55 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:55 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:17:55 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:00 **** Incremental Build of configuration Debug for project tcp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project tcp_echo_client3opt ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:00 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:18:35 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:37 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:43 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:56 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:57 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:18:59 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc  -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+/usr/bin/ld: -lmynet が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:20:09 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:20:09 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+../src/quiz.c: 関数 ‘main’ 内:
+../src/quiz.c:17:7: 警告: 変数 ‘num_client’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   int num_client =DEFAULT_NCLIENT;
+       ^
+Finished building: ../src/quiz.c
+ 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:21:01 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:21:01 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet -lquiz
+/usr/bin/ld: -lquiz が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:21:19 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:21:20 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:21:42 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:21:43 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:21:44 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:21:44 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:21:46 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:21:46 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o   -lmynet
+./src/quiz_client.o: 関数 `quiz_client' 内:
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:35: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/network/quiz/Debug/../src/quiz_client.c:40: `Recv' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [quiz] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:23:33 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:23:33 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/network/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "quiz"  ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o   -lmynet
+Finished building target: quiz
+ 
+13:23:38 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:23:38 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+13:23:50 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
