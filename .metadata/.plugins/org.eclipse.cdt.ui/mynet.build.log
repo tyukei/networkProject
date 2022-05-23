@@ -1,6 +1,6 @@
-13:23:38 **** Incremental Build of configuration Debug for project mynet ****
+16:49:11 **** Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
 
-13:23:38 Build Finished. 0 errors, 0 warnings. (took 78ms)
+16:49:11 Build Finished. 0 errors, 0 warnings. (took 417ms)
 
