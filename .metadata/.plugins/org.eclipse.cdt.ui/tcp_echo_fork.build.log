@@ -1,6 +1,6 @@
-16:49:13 **** Build of configuration Debug for project tcp_echo_fork ****
+23:22:29 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
 make all 
 make: `all' に対して行うべき事はありません.
 
-16:49:13 Build Finished. 0 errors, 0 warnings. (took 350ms)
+23:22:29 Build Finished. 0 errors, 0 warnings. (took 76ms)
 

@@ -1,66 +1,78 @@
-14:12:45 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+21:40:14 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
 make all 
-Building file: ../src/tcp_echo_fork2.c
+Building file: ../src/tcp_echo_thred.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_fork2.d" -MT"src/tcp_echo_fork2.o" -o "src/tcp_echo_fork2.o" "../src/tcp_echo_fork2.c"
-Finished building: ../src/tcp_echo_fork2.c
- 
-Building target: tcp_echo_fork2
-Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "tcp_echo_fork2"  ./src/tcp_echo_fork2.o   -lmynet
-Finished building target: tcp_echo_fork2
- 
-14:12:48 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_thred.d" -MT"src/tcp_echo_thred.o" -o "src/tcp_echo_thred.o" "../src/tcp_echo_thred.c"
+../src/tcp_echo_thred.c: 関数 ‘main’ 内:
+../src/tcp_echo_thred.c:27:5: エラー: ‘for’ ループ初期化宣言は C99 モード内でのみ許可されています
+     for(int i = 0; i < num_thread; i++){
+     ^
+../src/tcp_echo_thred.c:27:5: 備考: オプション -std=c99 または -std=gnu99 をコードコンパイル時に使用してください
+../src/tcp_echo_thred.c:10:22: 警告: 使用されない変数 ‘sock_accepted’ です [-Wunused-variable]
+     int sock_listen, sock_accepted;
+                      ^
+make: *** [src/tcp_echo_thred.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:40:22 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:13:01 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+21:40:23 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:18:12 **** Incremental Build of configuration Debug for project mynet ****
+21:40:23 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
 make all 
-make: `all' に対して行うべき事はありません.
-14:18:13 **** Incremental Build of configuration Debug for project tcp_echo_fork ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:18:13 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-Building file: ../src/tcp_echo_fork2.c
+Building file: ../src/tcp_echo_thred.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_fork2.d" -MT"src/tcp_echo_fork2.o" -o "src/tcp_echo_fork2.o" "../src/tcp_echo_fork2.c"
-Finished building: ../src/tcp_echo_fork2.c
- 
-Building target: tcp_echo_fork2
-Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "tcp_echo_fork2"  ./src/tcp_echo_fork2.o   -lmynet
-Finished building target: tcp_echo_fork2
- 
-14:18:14 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_thred.d" -MT"src/tcp_echo_thred.o" -o "src/tcp_echo_thred.o" "../src/tcp_echo_thred.c"
+../src/tcp_echo_thred.c: 関数 ‘main’ 内:
+../src/tcp_echo_thred.c:27:5: エラー: ‘for’ ループ初期化宣言は C99 モード内でのみ許可されています
+     for(int i = 0; i < num_thread; i++){
+     ^
+../src/tcp_echo_thred.c:27:5: 備考: オプション -std=c99 または -std=gnu99 をコードコンパイル時に使用してください
+../src/tcp_echo_thred.c:10:22: 警告: 使用されない変数 ‘sock_accepted’ です [-Wunused-variable]
+     int sock_listen, sock_accepted;
+                      ^
+make: *** [src/tcp_echo_thred.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:41:05 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:18:17 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+21:41:05 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:18:28 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+21:41:05 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
 make all 
-make: `all' に対して行うべき事はありません.
-16:49:11 **** Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-16:49:13 **** Build of configuration Debug for project tcp_echo_fork ****
-make all 
-make: `all' に対して行うべき事はありません.
-16:49:14 **** Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-16:49:28 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-Building file: ../src/tcp_echo_fork2.c
+Building file: ../src/tcp_echo_thred.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_fork2.d" -MT"src/tcp_echo_fork2.o" -o "src/tcp_echo_fork2.o" "../src/tcp_echo_fork2.c"
-Finished building: ../src/tcp_echo_fork2.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_thred.d" -MT"src/tcp_echo_thred.o" -o "src/tcp_echo_thred.o" "../src/tcp_echo_thred.c"
+../src/tcp_echo_thred.c: 関数 ‘main’ 内:
+../src/tcp_echo_thred.c:27:5: エラー: ‘for’ ループ初期化宣言は C99 モード内でのみ許可されています
+     for(int i = 0; i < num_thread; i++){
+     ^
+../src/tcp_echo_thred.c:27:5: 備考: オプション -std=c99 または -std=gnu99 をコードコンパイル時に使用してください
+../src/tcp_echo_thred.c:10:22: 警告: 使用されない変数 ‘sock_accepted’ です [-Wunused-variable]
+     int sock_listen, sock_accepted;
+                      ^
+make: *** [src/tcp_echo_thred.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:41:13 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+21:41:14 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+21:41:14 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
+make all 
+Building file: ../src/tcp_echo_thred.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tcp_echo_thred.d" -MT"src/tcp_echo_thred.o" -o "src/tcp_echo_thred.o" "../src/tcp_echo_thred.c"
+Finished building: ../src/tcp_echo_thred.c
  
-Building target: tcp_echo_fork2
+Building target: tcp_echo_thred
 Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "tcp_echo_fork2"  ./src/tcp_echo_fork2.o   -lmynet
-Finished building target: tcp_echo_fork2
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "tcp_echo_thred"  ./src/tcp_echo_thred.o   -lmynet -lpthread
+Finished building target: tcp_echo_thred
  
+21:41:37 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
+make all 
+make: `all' に対して行うべき事はありません.
