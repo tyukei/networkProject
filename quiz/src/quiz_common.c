@@ -1,4 +1,5 @@
 #include "mynet.h"
+#include "quiz.h"
 
 int Accept(int s, struct sockaddr *addr, socklen_t *addrlen)
 {

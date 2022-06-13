@@ -9,7 +9,7 @@
 #define DEFAULT_MODE 'C'   /* 省略時はクライアント */
 
 extern char *optarg;
-extern int optind, opterr, optopt;
+extern int  opterr, optopt;
 
 int main(int argc, char *argv[])
 {
@@ -45,9 +45,9 @@ int main(int argc, char *argv[])
 	  case 'c':  /* クライアントの数 */
 	    num_client = atoi(optarg);
 	    break;
-
 	  case '?' :
 	    fprintf(stderr,"Unknown option '%c'\n", optopt );
+	    break;
 	  case 'h' :
 	    fprintf(stderr,"Usage(Server): %s -S -p port_number -c num_client\n", argv[0]);
 	    fprintf(stderr,"Usage(Client): %s -C -s server_name -p port_number\n", argv[0]);

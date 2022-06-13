@@ -1,722 +1,1108 @@
-13:04:42 **** Incremental Build of configuration Debug for project quiz ****
+23:53:22 **** Incremental Build of configuration Debug for project chat ****
 make all 
-Building file: ../src/quiz_server.c
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o ./src/chat_util.o   -lmynet -lchat
+/usr/bin/ld: -lchat が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [chat] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:15:20 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_server.d" -MT"src/quiz_server.o" -o "src/quiz_server.o" "../src/quiz_server.c"
-Finished building: ../src/quiz_server.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
  
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o ./src/chat_util.o   -lmynet -lchat
+/usr/bin/ld: -lchat が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [chat] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:15:20 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+00:57:25 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building file: ../src/chat_util.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_util.d" -MT"src/chat_util.o" -o "src/chat_util.o" "../src/chat_util.c"
+Finished building: ../src/chat_util.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o ./src/chat_util.o   -lmynet -lchat
+/usr/bin/ld: -lchat が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [chat] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:57:25 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+00:58:49 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o ./src/chat_util.o   -lmynet -lchat
+/usr/bin/ld: -lchat が見つかりません
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [chat] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:58:49 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+00:59:19 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o ./src/chat_util.o   -lmynet
+./src/chat_util.o: 関数 `chat_loop' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:51: `make_question' に対する定義されていない参照です
+./src/chat_util.o: 関数 `client_login' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:72: `Accept' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:76: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:79: `Recv' に対する定義されていない参照です
+./src/chat_util.o: 関数 `send_question' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:96: `Send' に対する定義されていない参照です
+./src/chat_util.o: 関数 `receive_answer' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:125: `Recv' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:128: `check_answer' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:131: `Send' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:135: `Send' に対する定義されていない参照です
+./src/chat_util.o: 関数 `send_result' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/chat/Debug/../src/chat_util.c:155: `Send' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [chat] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:59:19 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:00:40 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+../src/chat_server.c: 関数 ‘chat_server’ 内:
+../src/chat_server.c:88:2: 警告: 1 番目の ‘free’ の引数へ渡すときに整数からキャスト無しにポインタを作成しています [デフォルトで有効]
+  free(n_client);
+  ^
+In file included from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:8:0,
+                 from ../src/chat.h:6,
+                 from ../src/chat_server.c:1:
+/usr/include/stdlib.h:482:13: 備考: expected ‘void *’ but argument is of type ‘int’
+ extern void free (void *__ptr) __THROW;
+             ^
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+01:00:41 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:01:49 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+01:01:49 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:02:10 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:02:11 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:04:50 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+01:04:50 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:05:08 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+01:05:09 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:06:30 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+01:06:30 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:07:00 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:07:15 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:07:26 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:09:28 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:09:41 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:11:47 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:12:00 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:14:35 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:19:57 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:24:16 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:24:17 **** Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:26:03 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+01:26:04 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:08:45 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:08:45 **** Build of configuration Debug for project quiz ****
+make all 
 Building file: ../src/quiz_util.c
 Invoking: GCC C Compiler
 gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c:19:12: 警告: ‘N_client’ が定義されましたが使用されません [-Wunused-variable]
- static int N_client;         /* クライアントの数 */
-            ^
-../src/quiz_util.c:20:21: 警告: ‘Client’ が定義されましたが使用されません [-Wunused-variable]
- static client_info *Client;  /* クライアントの情報 */
-                     ^
-../src/quiz_util.c:21:12: 警告: ‘Max_sd’ が定義されましたが使用されません [-Wunused-variable]
- static int Max_sd;               /* ディスクリプタ最大値 */
-            ^
-../src/quiz_util.c:22:13: 警告: ‘Ranking’ が定義されましたが使用されません [-Wunused-variable]
- static int *Ranking;         /* 順位の保存用 */
-             ^
-../src/quiz_util.c:23:13: 警告: ‘Buf’ が定義されましたが使用されません [-Wunused-variable]
- static char Buf[BUFLEN];     /* 通信用バッファ */
-             ^
-../src/quiz_util.c:26:12: 警告: ‘client_login’ が ‘static’ と宣言されましたが定義されていません [-Wunused-function]
- static int client_login(int sock_listen);
-            ^
-../src/quiz_util.c:27:13: 警告: ‘send_question’ が ‘static’ と宣言されましたが定義されていません [-Wunused-function]
- static void send_question( char *question );
-             ^
-../src/quiz_util.c:28:13: 警告: ‘receive_answer’ が ‘static’ と宣言されましたが定義されていません [-Wunused-function]
- static void receive_answer();
-             ^
-../src/quiz_util.c:29:13: 警告: ‘send_result’ が ‘static’ と宣言されましたが定義されていません [-Wunused-function]
- static void send_result();
-             ^
-../src/quiz_util.c:30:14: 警告: ‘chop_nl’ が ‘static’ と宣言されましたが定義されていません [-Wunused-function]
- static char *chop_nl(char *s);
-              ^
 Finished building: ../src/quiz_util.c
  
 Building target: quiz
 Invoking: GCC C Linker
 gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
-./src/quiz_server.o: 関数 `quiz_server' 内:
-/home/centos/デスクトップ/git/networkprogram/networkProject/quiz/Debug/../src/quiz_server.c:17: `init_client' に対する定義されていない参照です
-/home/centos/デスクトップ/git/networkprogram/networkProject/quiz/Debug/../src/quiz_server.c:22: `question_loop' に対する定義されていない参照です
-collect2: エラー: ld はステータス 1 で終了しました
-make: *** [quiz] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-13:15:26 **** Build of configuration Debug for project mynet ****
+Finished building target: quiz
+ 
+08:09:16 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:15:26 **** Incremental Build of configuration Debug for project quiz ****
+08:09:16 **** Incremental Build of configuration Debug for project quiz ****
 make all 
 Building file: ../src/quiz.c
 Invoking: GCC C Compiler
 gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
 Finished building: ../src/quiz.c
  
-Building file: ../src/quiz_util.c
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:10:31 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:30:34 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:30:34 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘client_login’ 内:
-../src/quiz_util.c:90:47: エラー: expected expression before ‘;’ token
-     Client[client_id].sock =                  ;
-                                               ^
-../src/quiz_util.c: 関数 ‘send_question’ 内:
-../src/quiz_util.c:103:26: エラー: expected expression before ‘,’ token
-     Send(                , question, strlen(question),0);
-                          ^
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:17: エラー: expected expression before ‘;’ token
-   answered =    ;
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:30:37 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:34:57 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:34:57 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:35:01 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:36:33 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:36:33 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:36:36 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:37:21 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:37:21 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:37:23 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:37:36 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:37:55 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:38:13 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:42:35 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:42:35 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:42:37 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:44:43 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:44:44 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:44:46 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:45:21 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:45:35 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:46:43 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:46:44 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:46:46 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:46:59 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:48:59 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:48:59 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+../src/quiz_client.c: 関数 ‘quiz_client’ 内:
+../src/quiz_client.c:13:44: 警告: 使用されない変数 ‘e_buf’ です [-Wunused-variable]
+   char s_buf[S_BUFSIZE], r_buf[R_BUFSIZE], e_buf[R_BUFSIZE];
+                                            ^
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:49:13 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:49:13 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+../src/quiz_client.c: 関数 ‘quiz_client’ 内:
+../src/quiz_client.c:14:8: 警告: 使用されない変数 ‘e_buf’ です [-Wunused-variable]
+   char e_buf[R_BUFSIZE];
+        ^
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:49:19 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:49:19 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:49:21 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:51:18 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:51:18 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:51:20 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:52:31 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:52:31 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+../src/quiz_client.c: 関数 ‘quiz_client’ 内:
+../src/quiz_client.c:15:8: 警告: 使用されない変数 ‘error_message’ です [-Wunused-variable]
+   char error_message[]="server is down";
+        ^
+../src/quiz_client.c:12:7: 警告: 変数 ‘status’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   int status;
+       ^
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:53:00 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:53:01 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:53:05 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:54:02 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:54:17 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:55:10 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:55:10 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:55:12 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:57:11 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:57:11 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+08:57:14 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+08:59:28 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+09:28:08 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+09:28:09 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+09:28:17 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+09:35:34 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+09:40:58 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+09:40:59 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+09:56:46 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+09:56:47 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+09:56:49 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:02:53 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+10:05:00 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+10:05:00 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:05:04 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:09:11 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+10:09:11 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:09:14 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:11:41 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:12:35 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:13:07 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:14:40 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+10:14:41 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:14:43 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+10:15:01 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:31:30 **** Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+../src/chat_server.c:17:8: エラー: ‘struct user’ の再定義です
+ struct user {
+        ^
+In file included from ../src/chat_server.c:1:0:
+../src/chat.h:10:8: 備考: 元々はここで定義されました
+ struct user {
+        ^
+../src/chat_server.c:22:10: エラー: ‘User’ と型が競合しています
+ }typedef User;
+          ^
+In file included from ../src/chat_server.c:1:0:
+../src/chat.h:15:10: 備考: 前の ‘User’ の宣言はここです
+ }typedef User;
+          ^
+../src/chat_server.c: 関数 ‘chat_init_server’ 内:
+../src/chat_server.c:29:14: 警告: 互換性のないポインタ型からの代入です [デフォルトで有効]
+  if ((client = (User*) malloc(n_client * sizeof(User))) == NULL) {
+              ^
+make: *** [src/chat_server.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:31:31 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:31:31 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+11:31:49 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+../src/chat_server.c:8:1: エラー: 不明な型名 ‘User’ です
+ User *client;
+ ^
+../src/chat_server.c: 関数 ‘chat_init_server’ 内:
+../src/chat_server.c:29:14: 警告: 互換性のないポインタ型からの代入です [デフォルトで有効]
+  if ((client = (User*) malloc(n_client * sizeof(User))) == NULL) {
+              ^
+../src/chat_server.c:45:12: エラー: 構造体または共用体ではない何かのメンバ ‘status’ の要求です
+   client[i].status = 1;
+            ^
+../src/chat_server.c:46:12: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   client[i].sock = sock_accepted;
+            ^
+../src/chat_server.c:47:20: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+   strncpy(client[i].name, loginname, namesize);
+                    ^
+../src/chat_server.c:48:12: エラー: 構造体または共用体ではない何かのメンバ ‘len’ の要求です
+   client[i].len = strlen(client[i].name);
+            ^
+../src/chat_server.c:48:35: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+   client[i].len = strlen(client[i].name);
+                                   ^
+../src/chat_server.c:49:38: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+   printf("%s connected.\n", client[i].name);
+                                      ^
+../src/chat_server.c:50:17: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   send(client[i].sock, "you are ", strlen("you are "), 0);
                  ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-../src/quiz_util.c: トップレベル:
-../src/quiz_util.c:29:13: 警告: ‘send_result’ が使用されましたが定義されていません [デフォルトで有効]
- static void send_result();
-             ^
-../src/quiz_util.c:30:14: 警告: ‘chop_nl’ が使用されましたが定義されていません [デフォルトで有効]
- static char *chop_nl(char *s);
-              ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:15:27 **** Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:15:27 **** Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:16:10 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:16:10 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘client_login’ 内:
-../src/quiz_util.c:90:47: エラー: expected expression before ‘;’ token
-     Client[client_id].sock =                  ;
-                                               ^
-../src/quiz_util.c: 関数 ‘send_question’ 内:
-../src/quiz_util.c:103:26: エラー: expected expression before ‘,’ token
-     Send(                , question, strlen(question),0);
-                          ^
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:17: エラー: expected expression before ‘;’ token
-   answered =    ;
+../src/chat_server.c:51:17: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   send(client[i].sock, client[i].name, client[i].len, 0);
                  ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-../src/quiz_util.c: 関数 ‘send_result’ 内:
-../src/quiz_util.c:158:57: エラー: expected expression before ‘)’ token
-                           rank+1,                       );
-                                                         ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:16:11 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:16:11 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:19:42 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:19:42 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘client_login’ 内:
-../src/quiz_util.c:90:47: エラー: expected expression before ‘;’ token
-     Client[client_id].sock =                  ;
-                                               ^
-../src/quiz_util.c: 関数 ‘send_question’ 内:
-../src/quiz_util.c:103:26: エラー: expected expression before ‘,’ token
-     Send(                , question, strlen(question),0);
-                          ^
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:17: エラー: expected expression before ‘;’ token
-   answered =    ;
+../src/chat_server.c:51:33: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+   send(client[i].sock, client[i].name, client[i].len, 0);
+                                 ^
+../src/chat_server.c:51:49: エラー: 構造体または共用体ではない何かのメンバ ‘len’ の要求です
+   send(client[i].sock, client[i].name, client[i].len, 0);
+                                                 ^
+../src/chat_server.c:52:17: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   send(client[i].sock, "\n", 1, 0);
                  ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:19:42 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:19:42 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:24:58 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:24:58 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘client_login’ 内:
-../src/quiz_util.c:90:47: エラー: expected expression before ‘;’ token
-     Client[client_id].sock =                  ;
-                                               ^
-../src/quiz_util.c: 関数 ‘send_question’ 内:
-../src/quiz_util.c:103:26: エラー: expected expression before ‘,’ token
-     Send(                , question, strlen(question),0);
-                          ^
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: ‘Right_answer’ が宣言されていません (この関数内での最初の使用)
-   answered = Right_answer;
-              ^
-../src/quiz_util.c:122:14: 備考: 未宣言の識別子は出現した各関数内で一回のみ報告されます
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:24:59 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:24:59 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:31:53 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:31:53 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘send_question’ 内:
-../src/quiz_util.c:103:5: 警告: passing argument 1 番目の ‘Send’ の引数を渡すときにポインタからキャスト無しに整数を作成しています [デフォルトで有効]
-     Send(&question, question, strlen(question),0);
-     ^
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:30:5: 備考: expected ‘int’ but argument is of type ‘char **’
- int Send(int s, void *buf, size_t len, int flags);
-     ^
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:31:53 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:31:53 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:33:45 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:33:45 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:33:45 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:33:45 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:45:29 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:45:29 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:45:29 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:45:29 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:45:29 **** Build of configuration Debug for project udp_echo_client ****
-make all 
-Building file: ../src/udp_echo_client.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
-../src/udp_echo_client.c:5:19: 致命的エラー: mynet.h: そのようなファイルやディレクトリはありません
- #include "mynet.h"
+../src/chat_server.c:55:18: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+    send(client[j].sock, client[i].name, client[i].len, 0);
+                  ^
+../src/chat_server.c:55:34: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+    send(client[j].sock, client[i].name, client[i].len, 0);
+                                  ^
+../src/chat_server.c:55:50: エラー: 構造体または共用体ではない何かのメンバ ‘len’ の要求です
+    send(client[j].sock, client[i].name, client[i].len, 0);
+                                                  ^
+../src/chat_server.c:56:18: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+    send(client[j].sock, " is coming now\n", strlen(" is coming now\n"),
+                  ^
+../src/chat_server.c:63:17: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   send(client[j].sock, "Let's start\n", strlen("Let's start\n"), 0);
+                 ^
+../src/chat_server.c:64:17: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   send(client[j].sock, "You:", strlen("You:"), 0);
+                 ^
+In file included from /usr/include/sys/types.h:219:0,
+                 from /usr/include/stdlib.h:314,
+                 from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:8,
+                 from ../src/chat.h:6,
+                 from ../src/chat_server.c:1:
+../src/chat_server.c:69:19: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   FD_SET(client[i].sock, &mask);
                    ^
-コンパイルを停止しました。
-make: *** [src/udp_echo_client.o] エラー 1
+../src/chat_server.c:69:19: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+   FD_SET(client[i].sock, &mask);
+                   ^
+../src/chat_server.c: 関数 ‘chat_server_loop’ 内:
+../src/chat_server.c:78:17: エラー: 構造体または共用体ではない何かのメンバ ‘status’ の要求です
+    if (client[i].status == 0) {
+                 ^
+In file included from /usr/include/sys/types.h:219:0,
+                 from /usr/include/stdlib.h:314,
+                 from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:8,
+                 from ../src/chat.h:6,
+                 from ../src/chat_server.c:1:
+../src/chat_server.c:81:26: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+    if (FD_ISSET(client[i].sock, &readfds)) {
+                          ^
+../src/chat_server.c:81:26: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+    if (FD_ISSET(client[i].sock, &readfds)) {
+                          ^
+../src/chat_server.c:83:29: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+     strsize = recv(client[i].sock, buf, BUFSIZE - 1, 0);
+                             ^
+../src/chat_server.c:86:15: エラー: 構造体または共用体ではない何かのメンバ ‘status’ の要求です
+      client[i].status = 0;
+               ^
+../src/chat_server.c:89:22: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+        send(client[j].sock, red, strlen(red), 0);
+                      ^
+../src/chat_server.c:90:22: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+        send(client[j].sock, client[i].name, client[i].len,
+                      ^
+../src/chat_server.c:90:38: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+        send(client[j].sock, client[i].name, client[i].len,
+                                      ^
+../src/chat_server.c:90:54: エラー: 構造体または共用体ではない何かのメンバ ‘len’ の要求です
+        send(client[j].sock, client[i].name, client[i].len,
+                                                      ^
+../src/chat_server.c:92:22: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+        send(client[j].sock, " left now\n",
+                      ^
+../src/chat_server.c:94:22: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+        send(client[j].sock, "You:", strlen("You:"), 0);
+                      ^
+../src/chat_server.c:104:21: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+       send(client[j].sock, red, strlen(red), 0);
+                     ^
+../src/chat_server.c:105:21: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+       send(client[j].sock, client[i].name, client[i].len, 0);
+                     ^
+../src/chat_server.c:105:37: エラー: 構造体または共用体ではない何かのメンバ ‘name’ の要求です
+       send(client[j].sock, client[i].name, client[i].len, 0);
+                                     ^
+../src/chat_server.c:105:53: エラー: 構造体または共用体ではない何かのメンバ ‘len’ の要求です
+       send(client[j].sock, client[i].name, client[i].len, 0);
+                                                     ^
+../src/chat_server.c:106:21: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+       send(client[j].sock, ": ", 2, 0);
+                     ^
+../src/chat_server.c:107:21: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+       send(client[j].sock, buf, strsize, 0);
+                     ^
+../src/chat_server.c:108:21: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+       send(client[j].sock, black, strlen(black), 0);
+                     ^
+../src/chat_server.c:110:20: エラー: 構造体または共用体ではない何かのメンバ ‘sock’ の要求です
+      send(client[j].sock, "You:", strlen("You:"), 0);
+                    ^
+make: *** [src/chat_server.o] エラー 1
 "make all" terminated with exit code 2. Build might be incomplete.
-13:46:29 **** Incremental Build of configuration Debug for project mynet ****
+11:31:50 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:46:29 **** Incremental Build of configuration Debug for project quiz ****
+11:31:50 **** Incremental Build of configuration Debug for project quiz ****
 make all 
-Building file: ../src/quiz_util.c
+make: `all' に対して行うべき事はありません.
+11:32:30 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+11:32:30 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:32:30 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:33:09 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+11:33:09 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:33:10 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:09 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+../src/chat_server.c: 関数 ‘chat_init_server’ 内:
+../src/chat_server.c:36:39: エラー: expected ‘)’ before ‘;’ token
+   sock_accepted = accept(Sock_accepted;, NULL, NULL);
+                                       ^
+../src/chat_server.c:36:39: エラー: 関数 ‘accept’ へ渡す引数が少なすぎます
+In file included from /usr/include/netinet/in.h:24:0,
+                 from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:10,
+                 from ../src/chat.h:6,
+                 from ../src/chat_server.c:1:
+/usr/include/sys/socket.h:244:12: 備考: ここで宣言されています
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../src/chat_server.c: 関数 ‘chat_server’ 内:
+../src/chat_server.c:128:2: 警告: 効果がない文です [-Wunused-value]
+  Sock_accepted; = init_tcpserver(port_number, n_client);
+  ^
+../src/chat_server.c:128:17: エラー: expected expression before ‘=’ token
+  Sock_accepted; = init_tcpserver(port_number, n_client);
+                 ^
+make: *** [src/chat_server.o] エラー 1
 "make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:46:29 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+11:43:09 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:46:29 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
+11:43:09 **** Incremental Build of configuration Debug for project quiz ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:46:30 **** Incremental Build of configuration Debug for project udp_echo_client ****
+11:43:26 **** Incremental Build of configuration Debug for project chat ****
 make all 
-Building file: ../src/udp_echo_client.c
+Building file: ../src/chat_server.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
-Finished building: ../src/udp_echo_client.c
- 
-Building target: udp_echo_client
-Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
-Finished building target: udp_echo_client
- 
-13:46:45 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:46:45 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+../src/chat_server.c: 関数 ‘chat_server’ 内:
+../src/chat_server.c:128:2: 警告: 効果がない文です [-Wunused-value]
+  Sock_accepted; = init_tcpserver(port_number, n_client);
+  ^
+../src/chat_server.c:128:17: エラー: expected expression before ‘=’ token
+  Sock_accepted; = init_tcpserver(port_number, n_client);
+                 ^
+make: *** [src/chat_server.o] エラー 1
 "make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:46:45 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
+11:43:26 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:46:45 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
+11:43:27 **** Incremental Build of configuration Debug for project quiz ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:46:45 **** Incremental Build of configuration Debug for project udp_echo_client ****
+11:43:33 **** Incremental Build of configuration Debug for project chat ****
 make all 
-make: `all' に対して行うべき事はありません.
-13:54:12 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:12 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
+Building file: ../src/chat_server.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:54:12 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:12 **** Incremental Build of configuration Debug for project tcp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:13 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:13 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:13 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:13 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:54:13 **** Build of configuration Debug for project udp_echo_server ****
-make all 
-Building file: ../src/udp_echo_server.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
-Finished building: ../src/udp_echo_server.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
  
-Building target: udp_echo_server
+Building target: chat
 Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
-Finished building target: udp_echo_server
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
  
-13:54:26 **** Incremental Build of configuration Debug for project udp_echo_server ****
+11:43:33 **** Incremental Build of configuration Debug for project mynet ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:54:49 **** Incremental Build of configuration Debug for project udp_echo_server ****
+11:43:33 **** Incremental Build of configuration Debug for project quiz ****
 make all 
 make: `all' に対して行うべき事はありません.
-13:57:08 **** Incremental Build of configuration Debug for project mynet ****
+11:44:05 **** Incremental Build of configuration Debug for project chat ****
 make all 
-make: `all' に対して行うべき事はありません.
-13:57:08 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
+Building file: ../src/chat_server.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:57:08 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:08 **** Incremental Build of configuration Debug for project tcp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:08 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:09 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:09 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:09 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:09 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:57:24 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:27 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:27 **** Incremental Build of configuration Debug for project quiz ****
-make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
-
-**** Build of configuration Debug for project quiz_server ****
-
-Nothing to build for project quiz_server
-13:58:28 **** Incremental Build of configuration Debug for project tcp_echo_fork2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project tcp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project tcp_echo_server2 ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project tcp_echo_server3th ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project tcp_echo_thred ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:28 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:58:33 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:20 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:20 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:22 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:22 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:54 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-13:59:54 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:00:48 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:00:48 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-Building file: ../src/udp_echo_client.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
-Finished building: ../src/udp_echo_client.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
  
-Building target: udp_echo_client
+Building target: chat
 Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
-Finished building target: udp_echo_client
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
  
-14:00:49 **** Incremental Build of configuration Debug for project udp_echo_server ****
+11:51:39 **** Incremental Build of configuration Debug for project chat ****
 make all 
-make: `all' に対して行うべき事はありません.
-14:01:13 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:01:13 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:01:13 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:01:34 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:02:04 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:02:04 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:02:04 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:06:58 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:06:58 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:06:58 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:07:22 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:07:24 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:07:46 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:08:43 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:09:41 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:09:51 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:14:32 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:14:32 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-Building file: ../src/udp_echo_client.c
+Building file: ../src/chat_client.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
-Finished building: ../src/udp_echo_client.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
  
-Building target: udp_echo_client
-Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
-Finished building target: udp_echo_client
- 
-14:14:32 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:16:22 **** Incremental Build of configuration Debug for project mynet ****
-make all 
-make: `all' に対して行うべき事はありません.
-14:16:22 **** Incremental Build of configuration Debug for project udp_echo_client ****
-make all 
-Building file: ../src/udp_echo_client.c
+Building file: ../src/chat_server.c
 Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
-Finished building: ../src/udp_echo_client.c
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
  
-Building target: udp_echo_client
+Building target: chat
 Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
-Finished building target: udp_echo_client
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
  
-14:16:22 **** Incremental Build of configuration Debug for project udp_echo_server ****
-make all 
-Building file: ../src/udp_echo_server.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
-Finished building: ../src/udp_echo_server.c
- 
-Building target: udp_echo_server
-Invoking: GCC C Linker
-gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
-Finished building target: udp_echo_server
- 
-14:16:24 **** Incremental Build of configuration Debug for project mynet ****
+11:52:03 **** Incremental Build of configuration Debug for project chat ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:16:24 **** Incremental Build of configuration Debug for project udp_echo_client ****
+11:52:20 **** Incremental Build of configuration Debug for project chat ****
 make all 
 make: `all' に対して行うべき事はありません.
-14:16:25 **** Incremental Build of configuration Debug for project udp_echo_server ****
+11:53:28 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:54:00 **** Incremental Build of configuration Debug for project chat ****
 make all 
 make: `all' に対して行うべき事はありません.

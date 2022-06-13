@@ -1,22 +1,6 @@
-13:58:27 **** Incremental Build of configuration Debug for project quiz ****
+11:43:33 **** Incremental Build of configuration Debug for project quiz ****
 make all 
-Building file: ../src/quiz_util.c
-Invoking: GCC C Compiler
-gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
-../src/quiz_util.c: 関数 ‘receive_answer’ 内:
-../src/quiz_util.c:122:14: エラー: expected expression before ‘;’ token
-   answered = ;
-              ^
-../src/quiz_util.c:133:31: エラー: expected expression before ‘,’ token
-  strsize = Recv(              , Buf, BUFLEN-1,0);
-                               ^
-../src/quiz_util.c:133:31: エラー: 関数 ‘Recv’ へ渡す引数が少なすぎます
-In file included from ../src/quiz_util.c:5:0:
-../src/quiz.h:33:5: 備考: ここで宣言されています
- int Recv(int s, void *buf, size_t len, int flags);
-     ^
-make: *** [src/quiz_util.o] エラー 1
-"make all" terminated with exit code 2. Build might be incomplete.
+make: `all' に対して行うべき事はありません.
 
-13:58:28 Build Failed. 5 errors, 0 warnings. (took 83ms)
+11:43:33 Build Finished. 0 errors, 0 warnings. (took 83ms)
 

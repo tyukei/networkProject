@@ -24,6 +24,7 @@ char *make_question()
   snprintf(Question, QUESTION_LEN, "Question: %d * %d = ? ", x, y);
 
   Right_answer = x * y;
+  printf("Right = %d",Right_answer);
 
   return(Question);
 }
@@ -31,5 +32,5 @@ char *make_question()
 /* 解答チェック関数 */
 int check_answer( char *answer )
 {
-  return(answer == Right_answer );
+  return(atoi(answer) == Right_answer );
 }
