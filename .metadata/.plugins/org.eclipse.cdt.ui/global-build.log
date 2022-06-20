@@ -1106,3 +1106,1555 @@ make: `all' に対して行うべき事はありません.
 11:54:00 **** Incremental Build of configuration Debug for project chat ****
 make all 
 make: `all' に対して行うべき事はありません.
+17:51:56 **** Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+17:51:57 **** Build of configuration Debug for project echo_client_broadcast ****
+make all 
+Building file: ../src/echo_client_broadcast.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/echo_client_broadcast.d" -MT"src/echo_client_broadcast.o" -o "src/echo_client_broadcast.o" "../src/echo_client_broadcast.c"
+../src/echo_client_broadcast.c: 関数 ‘main’ 内:
+../src/echo_client_broadcast.c:31:3: 警告: 関数 ‘set_sockaddr_in’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+../src/echo_client_broadcast.c:34:27: エラー: expected expression before ‘;’ token
+   sock =                  ;
+                           ^
+../src/echo_client_broadcast.c:51:3: 警告: 関数 ‘Sendto’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   Sendto(sock, s_buf, strsize, 0,
+   ^
+../src/echo_client_broadcast.c:68:5: 警告: 関数 ‘Recvfrom’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     strsize = Recvfrom(sock, r_buf, R_BUFSIZE-1, 0,
+     ^
+make: *** [src/echo_client_broadcast.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:51:58 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:51:58 **** Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:54:33 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:54:33 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:54:33 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:54:34 **** Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+17:54:34 **** Clean-only build of configuration Debug for project udp_echo_client_2bro ****
+make clean 
+rm -rf  ./src/echo_client_broadcast.o  ./src/echo_client_broadcast.d  echo_client_broadcast
+ 
+17:54:34 **** Build of configuration Debug for project udp_echo_client_2bro ****
+make all 
+Building file: ../src/echo_client_broadcast.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/echo_client_broadcast.d" -MT"src/echo_client_broadcast.o" -o "src/echo_client_broadcast.o" "../src/echo_client_broadcast.c"
+../src/echo_client_broadcast.c: 関数 ‘main’ 内:
+../src/echo_client_broadcast.c:31:3: 警告: 関数 ‘set_sockaddr_in’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+../src/echo_client_broadcast.c:53:3: 警告: 関数 ‘Sendto’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   Sendto(sock, s_buf, strsize, 0,
+   ^
+../src/echo_client_broadcast.c:70:5: 警告: 関数 ‘Recvfrom’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     strsize = Recvfrom(sock, r_buf, R_BUFSIZE-1, 0,
+     ^
+Finished building: ../src/echo_client_broadcast.c
+ 
+Building target: udp_echo_client_2bro
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client_2bro"  ./src/echo_client_broadcast.o   -lmynet
+./src/echo_client_broadcast.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client_2bro/Debug/../src/echo_client_broadcast.c:31: `set_sockaddr_in' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client_2bro/Debug/../src/echo_client_broadcast.c:53: `Sendto' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client_2bro/Debug/../src/echo_client_broadcast.c:70: `Recvfrom' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_client_2bro] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:54:34 **** Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:02:36 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+18:02:37 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+Building file: ../init_tcpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpclient.d" -MT"init_tcpclient.o" -o "init_tcpclient.o" "../init_tcpclient.c"
+Finished building: ../init_tcpclient.c
+ 
+Building file: ../init_tcpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpserver.d" -MT"init_tcpserver.o" -o "init_tcpserver.o" "../init_tcpserver.c"
+Finished building: ../init_tcpserver.c
+ 
+Building file: ../init_udpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpclient.d" -MT"init_udpclient.o" -o "init_udpclient.o" "../init_udpclient.c"
+Finished building: ../init_udpclient.c
+ 
+Building target: libmynet.a
+Invoking: GCC Archiver
+ar -r  "libmynet.a"  ./init_tcpclient.o ./init_tcpserver.o ./init_udpclient.o ./other.o   
+ar: libmynet.a を作成しています
+Finished building target: libmynet.a
+ 
+18:02:37 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/question.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question.d" -MT"src/question.o" -o "src/question.o" "../src/question.c"
+Finished building: ../src/question.c
+ 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+Finished building: ../src/quiz.c
+ 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building file: ../src/quiz_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_server.d" -MT"src/quiz_server.o" -o "src/quiz_server.o" "../src/quiz_server.c"
+Finished building: ../src/quiz_server.c
+ 
+Building file: ../src/quiz_util.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
+Finished building: ../src/quiz_util.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+18:02:37 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+Building file: ../src/udp_echo_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
+Finished building: ../src/udp_echo_client.c
+ 
+Building target: udp_echo_client
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
+Finished building target: udp_echo_client
+ 
+18:02:38 **** Clean-only build of configuration Debug for project udp_echo_client2 ****
+make clean 
+rm -rf  ./src/echo_client_broadcast.o  ./src/echo_client_broadcast.d  udp_echo_client_2bro
+ 
+18:02:38 **** Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_client2.d" -MT"src/udp_client2.o" -o "src/udp_client2.o" "../src/udp_client2.c"
+../src/udp_client2.c: 関数 ‘main’ 内:
+../src/udp_client2.c:31:3: 警告: 関数 ‘set_sockaddr_in’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+../src/udp_client2.c:53:3: 警告: 関数 ‘Sendto’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   Sendto(sock, s_buf, strsize, 0,
+   ^
+../src/udp_client2.c:70:5: 警告: 関数 ‘Recvfrom’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     strsize = Recvfrom(sock, r_buf, R_BUFSIZE-1, 0,
+     ^
+Finished building: ../src/udp_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_client2.o   -lmynet
+./src/udp_client2.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:31: `set_sockaddr_in' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:53: `Sendto' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:70: `Recvfrom' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_client2] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:02:38 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+18:04:11 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+18:04:12 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:04:12 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:04:12 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:04:12 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_client2.d" -MT"src/udp_client2.o" -o "src/udp_client2.o" "../src/udp_client2.c"
+../src/udp_client2.c: 関数 ‘main’ 内:
+../src/udp_client2.c:31:3: 警告: passing argument 2 番目の ‘set_sockaddr_in_broadcast’ の引数を渡すときにポインタからキャスト無しに整数を作成しています [デフォルトで有効]
+   set_sockaddr_in_broadcast(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+In file included from ../src/udp_client2.c:1:0:
+/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:19:6: 備考: expected ‘in_port_t’ but argument is of type ‘char *’
+ void set_sockaddr_in_broadcast(struct sockaddr_in *server_adrs,in_port_t port_number );
+      ^
+../src/udp_client2.c:31:3: エラー: 関数 ‘set_sockaddr_in_broadcast’ への引数が多すぎます
+   set_sockaddr_in_broadcast(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+In file included from ../src/udp_client2.c:1:0:
+/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:19:6: 備考: ここで宣言されています
+ void set_sockaddr_in_broadcast(struct sockaddr_in *server_adrs,in_port_t port_number );
+      ^
+../src/udp_client2.c:53:3: 警告: 関数 ‘Sendto’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   Sendto(sock, s_buf, strsize, 0,
+   ^
+../src/udp_client2.c:70:5: 警告: 関数 ‘Recvfrom’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     strsize = Recvfrom(sock, r_buf, R_BUFSIZE-1, 0,
+     ^
+make: *** [src/udp_client2.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:04:12 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:06:13 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:06:14 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:06:14 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:06:14 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:06:14 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_client2.d" -MT"src/udp_client2.o" -o "src/udp_client2.o" "../src/udp_client2.c"
+../src/udp_client2.c: 関数 ‘main’ 内:
+../src/udp_client2.c:31:3: 警告: 関数 ‘set_sockaddr_in’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in(&broadcast_adrs, argv[1], (in_port_t)atoi(argv[2]));
+   ^
+../src/udp_client2.c:53:3: 警告: 関数 ‘Sendto’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   Sendto(sock, s_buf, strsize, 0,
+   ^
+../src/udp_client2.c:70:5: 警告: 関数 ‘Recvfrom’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     strsize = Recvfrom(sock, r_buf, R_BUFSIZE-1, 0,
+     ^
+Finished building: ../src/udp_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_client2.o   -lmynet
+./src/udp_client2.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:31: `set_sockaddr_in' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:53: `Sendto' に対する定義されていない参照です
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_client2/Debug/../src/udp_client2.c:70: `Recvfrom' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_client2] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:06:14 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:13:18 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+18:13:19 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+Building file: ../init_tcpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpclient.d" -MT"init_tcpclient.o" -o "init_tcpclient.o" "../init_tcpclient.c"
+Finished building: ../init_tcpclient.c
+ 
+Building file: ../init_tcpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpserver.d" -MT"init_tcpserver.o" -o "init_tcpserver.o" "../init_tcpserver.c"
+Finished building: ../init_tcpserver.c
+ 
+Building file: ../init_udpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpclient.d" -MT"init_udpclient.o" -o "init_udpclient.o" "../init_udpclient.c"
+Finished building: ../init_udpclient.c
+ 
+Building file: ../init_udpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpserver.d" -MT"init_udpserver.o" -o "init_udpserver.o" "../init_udpserver.c"
+Finished building: ../init_udpserver.c
+ 
+Building file: ../other.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"other.d" -MT"other.o" -o "other.o" "../other.c"
+Finished building: ../other.c
+ 
+Building target: libmynet.a
+Invoking: GCC Archiver
+ar -r  "libmynet.a"  ./init_tcpclient.o ./init_tcpserver.o ./init_udpclient.o ./init_udpserver.o ./other.o   
+ar: libmynet.a を作成しています
+Finished building target: libmynet.a
+ 
+18:13:19 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/question.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question.d" -MT"src/question.o" -o "src/question.o" "../src/question.c"
+Finished building: ../src/question.c
+ 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+Finished building: ../src/quiz.c
+ 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building file: ../src/quiz_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_server.d" -MT"src/quiz_server.o" -o "src/quiz_server.o" "../src/quiz_server.c"
+Finished building: ../src/quiz_server.c
+ 
+Building file: ../src/quiz_util.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
+Finished building: ../src/quiz_util.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+18:13:19 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+Building file: ../src/udp_echo_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
+Finished building: ../src/udp_echo_client.c
+ 
+Building target: udp_echo_client
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
+Finished building target: udp_echo_client
+ 
+18:13:20 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_client2.d" -MT"src/udp_client2.o" -o "src/udp_client2.o" "../src/udp_client2.c"
+Finished building: ../src/udp_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+18:13:20 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+18:13:30 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+18:13:31 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:13:31 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:13:31 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:13:31 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+18:13:31 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:07:59 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:08:00 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:08:00 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:08:00 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:08:00 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:08:00 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:20:02 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:20:02 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:20:02 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:20:02 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:20:03 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"   -lmynet
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o: 関数 `_start' 内:
+(.text+0x20): `main' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_client2] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:20:03 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:25:54 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:25:54 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:25:54 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:25:55 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+Building file: ../src/udp_echo_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
+../src/udp_echo_client.c: 関数 ‘main’ 内:
+../src/udp_echo_client.c:12:19: 警告: 使用されない変数 ‘server_host’ です [-Wunused-variable]
+   struct hostent *server_host;
+                   ^
+Finished building: ../src/udp_echo_client.c
+ 
+Building target: udp_echo_client
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
+Finished building target: udp_echo_client
+ 
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:25:55 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: 警告: 関数 ‘show_adrsinfo’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     show_adrsinfo(port_number);
+     ^
+../src/udp_echo_server.c:11:22: 警告: 使用されない変数 ‘my_adrs’ です [-Wunused-variable]
+   struct sockaddr_in my_adrs;
+                      ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+./src/udp_echo_server.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_server/Debug/../src/udp_echo_server.c:55: `show_adrsinfo' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_server] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:26:04 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:26:05 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:26:05 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:26:05 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:26:05 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+./src/udp_echo_server.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_server/Debug/../src/udp_echo_server.c:55: `show_adrsinfo' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_server] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:28:37 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:37 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:37 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:38 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:28:38 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+./src/udp_echo_server.o: 関数 `main' 内:
+/home/centos/デスクトップ/git/networkprogram/networkProject/udp_echo_server/Debug/../src/udp_echo_server.c:55: `show_adrsinfo' に対する定義されていない参照です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [udp_echo_server] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:28:45 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:45 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:45 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:28:45 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:28:45 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: エラー: 1 番目の ‘inet_ntoa’ の引数用の互換性がない型です
+     inet_ntoa(port_number);
+     ^
+In file included from ../src/udp_echo_server.c:5:0:
+/usr/include/arpa/inet.h:53:14: 備考: expected ‘struct in_addr’ but argument is of type ‘in_port_t’
+ extern char *inet_ntoa (struct in_addr __in) __THROW;
+              ^
+make: *** [src/udp_echo_server.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:39:15 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:15 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:15 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:15 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:39:16 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: 警告: 関数 ‘show_adrsinfo’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     show_adrsinfo(from_adrs);
+     ^
+../src/udp_echo_server.c: トップレベル:
+../src/udp_echo_server.c:69:6: 警告: ‘show_adrsinfo’ と型が競合しています [デフォルトで有効]
+ void show_adrsinfo(struct sockaddr_in *adrs_in)
+      ^
+../src/udp_echo_server.c:55:5: 備考: 前の ‘show_adrsinfo’ の暗黙的な宣言はここです
+     show_adrsinfo(from_adrs);
+     ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:39:32 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:32 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:32 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:39:32 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:39:32 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: 警告: 関数 ‘show_adrsinfo’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     show_adrsinfo((struct sockaddr *)&from_adrs);
+     ^
+../src/udp_echo_server.c: トップレベル:
+../src/udp_echo_server.c:69:6: 警告: ‘show_adrsinfo’ と型が競合しています [デフォルトで有効]
+ void show_adrsinfo(struct sockaddr_in *adrs_in)
+      ^
+../src/udp_echo_server.c:55:5: 備考: 前の ‘show_adrsinfo’ の暗黙的な宣言はここです
+     show_adrsinfo((struct sockaddr *)&from_adrs);
+     ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:41:26 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:41:26 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:41:26 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:41:26 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:41:27 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: 警告: 関数 ‘show_adrsinfo’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     show_adrsinfo(sock);
+     ^
+../src/udp_echo_server.c: トップレベル:
+../src/udp_echo_server.c:69:6: 警告: ‘show_adrsinfo’ と型が競合しています [デフォルトで有効]
+ void show_adrsinfo(struct sockaddr_in *adrs_in)
+      ^
+../src/udp_echo_server.c:55:5: 備考: 前の ‘show_adrsinfo’ の暗黙的な宣言はここです
+     show_adrsinfo(sock);
+     ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:42:04 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:04 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:04 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:04 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:42:05 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:13 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:14 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:14 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:14 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:42:14 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:21 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:21 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:21 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:42:21 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:42:22 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:05 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:05 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:05 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:05 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:43:06 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:07 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:07 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:07 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:07 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:43:07 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:30 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:30 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:30 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:30 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:43:30 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: 警告: 関数 ‘show_adrsinfo’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+     show_adrsinfo(from_adrs);
+     ^
+../src/udp_echo_server.c: トップレベル:
+../src/udp_echo_server.c:69:6: 警告: ‘show_adrsinfo’ と型が競合しています [デフォルトで有効]
+ void show_adrsinfo(struct sockaddr_in *adrs_in)
+      ^
+../src/udp_echo_server.c:55:5: 備考: 前の ‘show_adrsinfo’ の暗黙的な宣言はここです
+     show_adrsinfo(from_adrs);
+     ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:43:53 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:53 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:53 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:43:54 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:43:54 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:5: エラー: 1 番目の ‘show_adrsinfo’ の引数用の互換性がない型です
+     show_adrsinfo(from_adrs);
+     ^
+../src/udp_echo_server.c:8:6: 備考: expected ‘struct sockaddr_in *’ but argument is of type ‘struct sockaddr_in’
+ void show_adrsinfo(struct sockaddr_in *adrs_in);
+      ^
+make: *** [src/udp_echo_server.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:44:17 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:44:17 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:44:17 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:44:17 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:44:17 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+../src/udp_echo_server.c: 関数 ‘main’ 内:
+../src/udp_echo_server.c:55:27: 警告: 互換性のないポインタ型から 1 番目の ‘show_adrsinfo’ の引数に渡しています [デフォルトで有効]
+     show_adrsinfo((struct sockaddr *)&from_adrs);
+                           ^
+../src/udp_echo_server.c:8:6: 備考: expected ‘struct sockaddr_in *’ but argument is of type ‘struct sockaddr *’
+ void show_adrsinfo(struct sockaddr_in *adrs_in);
+      ^
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:45:00 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:00 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:00 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:00 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:45:00 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+11:45:04 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:04 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:04 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:04 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+
+**** Build of configuration Debug for project udp_echo_client2 ****
+
+Nothing to build for project udp_echo_client2
+11:45:04 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:45:19 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:53:40 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:53:40 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:53:41 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:53:41 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:53:41 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+../src/udp_echo_client2.c: 関数 ‘main’ 内:
+../src/udp_echo_client2.c:61:5: エラー: 5 番目の ‘select’ の引数用の互換性がない型です
+     if( select( sock+1, &readfds, NULL, NULL,timeout)==0 ){
+     ^
+In file included from /usr/include/sys/types.h:219:0,
+                 from /usr/include/stdlib.h:314,
+                 from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:8,
+                 from ../src/udp_echo_client2.c:1:
+/usr/include/sys/select.h:106:12: 備考: expected ‘struct timeval * __restrict__’ but argument is of type ‘struct timeval’
+ extern int select (int __nfds, fd_set *__restrict __readfds,
+            ^
+make: *** [src/udp_echo_client2.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:54:44 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:54:44 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:54:45 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:54:45 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:54:45 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+../src/udp_echo_client2.c: 関数 ‘main’ 内:
+../src/udp_echo_client2.c:61:5: 警告: 5 番目の ‘select’ の引数へ渡すときに整数からキャスト無しにポインタを作成しています [デフォルトで有効]
+     if( select( sock+1, &readfds, NULL, NULL,timeout.tv_sec)==0 ){
+     ^
+In file included from /usr/include/sys/types.h:219:0,
+                 from /usr/include/stdlib.h:314,
+                 from /home/centos/デスクトップ/git/networkprogram/networkProject/mynet/mynet.h:8,
+                 from ../src/udp_echo_client2.c:1:
+/usr/include/sys/select.h:106:12: 備考: expected ‘struct timeval * __restrict__’ but argument is of type ‘__time_t’
+ extern int select (int __nfds, fd_set *__restrict __readfds,
+            ^
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+11:55:32 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:55:33 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:55:33 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:55:33 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+11:55:33 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+12:01:45 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:30 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:30 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:30 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:30 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:30 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+../src/udp_echo_client2.c: 関数 ‘main’ 内:
+../src/udp_echo_client2.c:32:3: 警告: 関数 ‘set_sockaddr_in_broadcast’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in_broadcast(broadcast_adrs,(in_port_t)atoi(argv[2]))
+   ^
+../src/udp_echo_client2.c:34:3: エラー: expected ‘;’ before ‘sock’
+   sock = init_udpclient();
+   ^
+make: *** [src/udp_echo_client2.o] エラー 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:36:51 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:51 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:51 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:51 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:36:51 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+../src/udp_echo_client2.c: 関数 ‘main’ 内:
+../src/udp_echo_client2.c:32:3: 警告: 関数 ‘set_sockaddr_in_broadcast’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in_broadcast(broadcast_adrs,(in_port_t)atoi(argv[2]));
+   ^
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+14:37:01 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:37:01 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:37:01 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:37:02 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:37:02 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+../src/udp_echo_client2.c: 関数 ‘main’ 内:
+../src/udp_echo_client2.c:32:3: 警告: 関数 ‘set_sockaddr_in_broadcast’ の暗黙的な宣言です [-Wimplicit-function-declaration]
+   set_sockaddr_in_broadcast(&broadcast_adrs,(in_port_t)atoi(argv[2]));
+   ^
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+14:37:40 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+14:37:41 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+Building file: ../init_tcpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpclient.d" -MT"init_tcpclient.o" -o "init_tcpclient.o" "../init_tcpclient.c"
+Finished building: ../init_tcpclient.c
+ 
+Building file: ../init_tcpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpserver.d" -MT"init_tcpserver.o" -o "init_tcpserver.o" "../init_tcpserver.c"
+Finished building: ../init_tcpserver.c
+ 
+Building file: ../init_udpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpclient.d" -MT"init_udpclient.o" -o "init_udpclient.o" "../init_udpclient.c"
+Finished building: ../init_udpclient.c
+ 
+Building file: ../init_udpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpserver.d" -MT"init_udpserver.o" -o "init_udpserver.o" "../init_udpserver.c"
+Finished building: ../init_udpserver.c
+ 
+Building file: ../other.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"other.d" -MT"other.o" -o "other.o" "../other.c"
+Finished building: ../other.c
+ 
+Building target: libmynet.a
+Invoking: GCC Archiver
+ar -r  "libmynet.a"  ./init_tcpclient.o ./init_tcpserver.o ./init_udpclient.o ./init_udpserver.o ./other.o   
+ar: libmynet.a を作成しています
+Finished building target: libmynet.a
+ 
+14:37:42 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/question.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question.d" -MT"src/question.o" -o "src/question.o" "../src/question.c"
+Finished building: ../src/question.c
+ 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+Finished building: ../src/quiz.c
+ 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building file: ../src/quiz_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_server.d" -MT"src/quiz_server.o" -o "src/quiz_server.o" "../src/quiz_server.c"
+Finished building: ../src/quiz_server.c
+ 
+Building file: ../src/quiz_util.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
+Finished building: ../src/quiz_util.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+14:37:42 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+Building file: ../src/udp_echo_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client.d" -MT"src/udp_echo_client.o" -o "src/udp_echo_client.o" "../src/udp_echo_client.c"
+../src/udp_echo_client.c: 関数 ‘main’ 内:
+../src/udp_echo_client.c:12:19: 警告: 使用されない変数 ‘server_host’ です [-Wunused-variable]
+   struct hostent *server_host;
+                   ^
+Finished building: ../src/udp_echo_client.c
+ 
+Building target: udp_echo_client
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
+Finished building target: udp_echo_client
+ 
+14:37:43 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+14:38:19 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+14:38:19 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:19 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:19 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:19 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+14:38:25 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:25 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:26 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:26 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:26 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:38:39 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:13:57 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building file: ../src/chat.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat.d" -MT"src/chat.o" -o "src/chat.o" "../src/chat.c"
+Finished building: ../src/chat.c
+ 
+Building file: ../src/chat_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_client.d" -MT"src/chat_client.o" -o "src/chat_client.o" "../src/chat_client.c"
+Finished building: ../src/chat_client.c
+ 
+Building file: ../src/chat_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/chat_server.d" -MT"src/chat_server.o" -o "src/chat_server.o" "../src/chat_server.c"
+Finished building: ../src/chat_server.c
+ 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+12:13:58 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+Building file: ../init_tcpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpclient.d" -MT"init_tcpclient.o" -o "init_tcpclient.o" "../init_tcpclient.c"
+Finished building: ../init_tcpclient.c
+ 
+Building file: ../init_tcpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_tcpserver.d" -MT"init_tcpserver.o" -o "init_tcpserver.o" "../init_tcpserver.c"
+Finished building: ../init_tcpserver.c
+ 
+Building file: ../init_udpclient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpclient.d" -MT"init_udpclient.o" -o "init_udpclient.o" "../init_udpclient.c"
+Finished building: ../init_udpclient.c
+ 
+Building file: ../init_udpserver.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"init_udpserver.d" -MT"init_udpserver.o" -o "init_udpserver.o" "../init_udpserver.c"
+Finished building: ../init_udpserver.c
+ 
+Building file: ../other.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"other.d" -MT"other.o" -o "other.o" "../other.c"
+Finished building: ../other.c
+ 
+Building target: libmynet.a
+Invoking: GCC Archiver
+ar -r  "libmynet.a"  ./init_tcpclient.o ./init_tcpserver.o ./init_udpclient.o ./init_udpserver.o ./other.o   
+ar: libmynet.a を作成しています
+Finished building target: libmynet.a
+ 
+12:13:58 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+Building file: ../src/question.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/question.d" -MT"src/question.o" -o "src/question.o" "../src/question.c"
+Finished building: ../src/question.c
+ 
+Building file: ../src/quiz.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz.d" -MT"src/quiz.o" -o "src/quiz.o" "../src/quiz.c"
+Finished building: ../src/quiz.c
+ 
+Building file: ../src/quiz_client.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_client.d" -MT"src/quiz_client.o" -o "src/quiz_client.o" "../src/quiz_client.c"
+Finished building: ../src/quiz_client.c
+ 
+Building file: ../src/quiz_common.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_common.d" -MT"src/quiz_common.o" -o "src/quiz_common.o" "../src/quiz_common.c"
+Finished building: ../src/quiz_common.c
+ 
+Building file: ../src/quiz_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_server.d" -MT"src/quiz_server.o" -o "src/quiz_server.o" "../src/quiz_server.c"
+Finished building: ../src/quiz_server.c
+ 
+Building file: ../src/quiz_util.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/quiz_util.d" -MT"src/quiz_util.o" -o "src/quiz_util.o" "../src/quiz_util.c"
+Finished building: ../src/quiz_util.c
+ 
+Building target: quiz
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "quiz"  ./src/question.o ./src/quiz.o ./src/quiz_client.o ./src/quiz_common.o ./src/quiz_server.o ./src/quiz_util.o   -lmynet
+Finished building target: quiz
+ 
+12:13:59 **** Build of configuration Debug for project udp_echo_client ****
+make all 
+Building target: udp_echo_client
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client"  ./src/udp_echo_client.o   -lmynet
+Finished building target: udp_echo_client
+ 
+12:13:59 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+12:25:03 **** Incremental Build of configuration Debug for project chat ****
+make all 
+Building target: chat
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "chat"  ./src/chat.o ./src/chat_client.o ./src/chat_server.o   -lmynet
+Finished building target: chat
+ 
+12:25:03 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:25:03 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:25:03 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:25:03 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:25:03 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+Building file: ../src/udp_echo_server.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_server.d" -MT"src/udp_echo_server.o" -o "src/udp_echo_server.o" "../src/udp_echo_server.c"
+Finished building: ../src/udp_echo_server.c
+ 
+Building target: udp_echo_server
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_server"  ./src/udp_echo_server.o   -lmynet
+Finished building target: udp_echo_server
+ 
+12:26:00 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+12:27:11 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+12:28:08 **** Incremental Build of configuration Debug for project chat ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:28:09 **** Incremental Build of configuration Debug for project mynet ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:28:09 **** Incremental Build of configuration Debug for project quiz ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:28:09 **** Incremental Build of configuration Debug for project udp_echo_client ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:28:09 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+Building file: ../src/udp_echo_client2.c
+Invoking: GCC C Compiler
+gcc -I"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/udp_echo_client2.d" -MT"src/udp_echo_client2.o" -o "src/udp_echo_client2.o" "../src/udp_echo_client2.c"
+Finished building: ../src/udp_echo_client2.c
+ 
+Building target: udp_echo_client2
+Invoking: GCC C Linker
+gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "udp_echo_client2"  ./src/udp_echo_client2.o   -lmynet
+Finished building target: udp_echo_client2
+ 
+12:28:09 **** Incremental Build of configuration Debug for project udp_echo_server ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:28:11 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.
+12:36:46 **** Incremental Build of configuration Debug for project udp_echo_client2 ****
+make all 
+make: `all' に対して行うべき事はありません.

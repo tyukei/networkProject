@@ -25,24 +25,27 @@ int main(int argc, char *argv[])
     fprintf(stderr,"Usage: %s Server_name Port_number\n", argv[0]);
     exit(EXIT_FAILURE);
   }
+  sock = init_udpclient();
 
   port_number = (in_port_t)atoi(argv[2]);
 
-  /* サーバ名をアドレス(hostent構造体)に変換する */
-  if((server_host = gethostbyname( argv[1] )) == NULL){
-    exit_errmesg("gethostbyname()");
-  }
+  set_sockaddr_in(&server_adrs,argv[1],port_number);
 
-  /* サーバの情報をsockaddr_in構造体に格納する */
-  memset(&server_adrs, 0, sizeof(server_adrs));
-  server_adrs.sin_family = AF_INET;
-  server_adrs.sin_port = htons(port_number);
-  memcpy(&server_adrs.sin_addr, server_host->h_addr, server_host->h_length);
+//  /* サーバ名をアドレス(hostent構造体)に変換する */
+//  if((server_host = gethostbyname( argv[1] )) == NULL){
+//    exit_errmesg("gethostbyname()");
+//  }
+//
+//  /* サーバの情報をsockaddr_in構造体に格納する */
+//  memset(&server_adrs, 0, sizeof(server_adrs));
+//  server_adrs.sin_family = AF_INET;
+//  server_adrs.sin_port = htons(port_number);
+//  memcpy(&server_adrs.sin_addr, server_host->h_addr, server_host->h_length);
 
-  /* ソケットをDGRAMモードで作成する */
-  if((sock = socket(PF_INET, SOCK_DGRAM, 0)) == -1){
-    exit_errmesg("socket()");
-  }
+//  /* ソケットをDGRAMモードで作成する */
+//  if((sock = socket(PF_INET, SOCK_DGRAM, 0)) == -1){
+//    exit_errmesg("socket()");
+//  }
 
   /* キーボードから文字列を入力する */
   fgets(s_buf, S_BUFSIZE, stdin);
