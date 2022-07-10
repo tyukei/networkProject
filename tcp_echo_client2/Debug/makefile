@@ -29,7 +29,7 @@ all: tcp_echo_client2
 tcp_echo_client2: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc -L"/home/centos/デスクトップ/git/network/mynet/Debug" -o "tcp_echo_client2" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -L"/home/centos/デスクトップ/git/networkprogram/networkProject/mynet/Debug" -o "tcp_echo_client2" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
